@@ -1,5 +1,5 @@
 /*
-Hack².js
+Hack².js v1.0
 Made by ComputerGuy (github.com/Ocean-OS)
 CC-BY-NC-SA 4.0 License
 Documentation
