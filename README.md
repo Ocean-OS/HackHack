@@ -1,16 +1,16 @@
 # Hack²
-Hack² - A highly productive Bitburner script that can scan for servers with a depth up to 12, and run multi-threaded hacking scripts on each one. 
+Hack² - A highly productive Bitburner script that can scan for servers with a depth up to 20, and run multi-threaded hacking scripts on each one. 
 ## Documentation
-- This script will scan for servers with a depth between 1 and 13. It then writes scripts for each server that hacks, weakens, grows, and/or nukes the server. 
+- This script will scan for servers with a depth between 1 and 21. It then writes scripts for each server that hacks, weakens, grows, and/or nukes the server. 
 - This script will automatically exclude any purchased servers and home from having the script being run on them. 
 - This script by itself will not use much RAM, but the scripts it creates and runs will. ~1TB of my RAM was taken running this script to run double-threaded scripts for 58 servers. 
 - This script uses arguments to have more configuration. The arguments are below, in the format of the command:
 ```shell
 hackhack.js -d -t -c
 ```
-D: D is a Number that can be between 1 and 12. D is the depth of the scan performed. Higher D = More Servers
-T: T is a Number greater than or equal to 1 that determines how many threads of each server script are run. Higher T = More threads, more RAM usage, more money
-C: C is JSON. C contains configuration formatted in JSON to simplify the syntax. Here's the full configuration options: 
+- D: D is a Number that can be between 1 and 20. D is the depth of the scan performed. **Higher D = More Servers**
+- T: T is a Number greater than or equal to 1 that determines how many threads of each server script are run. **Higher T = More threads, more RAM usage, more money**
+- C: C is JSON. C contains configuration formatted in JSON to simplify the syntax. Here's the full configuration options: 
 ```json
 {
   "exempt": [],
@@ -32,3 +32,4 @@ hackhack.js 5 1 {exempt:["iron-gym"],kill:true}
 ```shell
 hackhack.js 8 1 {kill:true}
 ```
+**Warning: This script can freeze Bitburner for anywhere from 2-10 minutes, depending on the depth and thread count chosen. Sometimes it can even cause Bitburner to crash.**
